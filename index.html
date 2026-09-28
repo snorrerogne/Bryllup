@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marthe & Snorre | 10. juli 2027</title>
+
+    <meta
+        name="description"
+        content="Velkommen til Marthe og Snorres bryllup 10. juli 2027."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <p class="eyebrow">VI SKAL GIFTE OSS</p>
+
+        <h1>Marthe <span>&</span> Snorre</h1>
+
+        <p class="date">Lørdag 10. juli 2027</p>
+
+        <a href="#svar" class="button button-light">
+            Svar på invitasjonen
+        </a>
+    </div>
+
+</header>
+
+
+<nav class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#" class="logo">M & S</a>
+
+        <div class="nav-links">
+            <a href="#info">Praktisk info</a>
+            <a href="#svar">Svar</a>
+            <a href="#vaer">Vær</a>
+            <a href="#foto">Foto</a>
+        </div>
+
+    </div>
+
+</nav>
+
+
+<main>
+
+    <!-- INTRO -->
+
+    <section class="section intro" id="info">
+
+        <div class="content narrow">
+
+            <p class="section-label">VELKOMMEN</p>
+
+            <h2>Vi gleder oss til å feire sammen med dere</h2>
+
+            <p>
+                Lørdag 10. juli 2027 samles vi for å feire kjærligheten,
+                livet og forhåpentligvis en ganske god mengde kake.
+            </p>
+
+            <p>
+                Her finner dere informasjon om bryllupet, praktiske detaljer
+                og mulighet til å svare på invitasjonen.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- QR -->
+
+    <section class="section qr-section">
+
+        <div class="content qr-layout">
+
+            <div>
+
+                <p class="section-label">DEL SIDEN</p>
+
+                <h2>Ta vare på denne siden</h2>
+
+                <p>
+                    Du kan skanne QR-koden for å komme tilbake til
+                    bryllupssiden. Perfekt til invitasjoner, bordkort
+                    og andre steder hvor en liten firkant med prikker
+                    plutselig har blitt nødvendig.
+                </p>
+
+            </div>
+
+            <div class="qr-card">
+
+                <!-- Bytt ut URL-en med den faktiske nettsiden deres -->
+
+                <img
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://DERES-NETTSIDE.no"
+                    alt="QR-kode til bryllupssiden"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRAKTISK INFO -->
+
+    <section class="section section-dark">
+
+        <div class="content">
+
+            <p class="section-label">PRAKTISK INFO</p>
+
+            <h2>Det viktigste</h2>
+
+            <div class="info-grid">
+
+                <div class="info-card">
+                    <span class="info-icon">📅</span>
+                    <h3>Dato</h3>
+                    <p>
+                        Lørdag 10. juli 2027
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <span class="info-icon">📍</span>
+                    <h3>Sted</h3>
+                    <p>
+                        Kommer snart
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <span class="info-icon">🕐</span>
+                    <h3>Tid</h3>
+                    <p>
+                        Mer informasjon kommer
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RSVP -->
+
+    <section class="section rsvp" id="svar">
+
+        <div class="content narrow">
+
+            <p class="section-label">SVAR PÅ INVITASJONEN</p>
+
+            <h2>Kommer du?</h2>
+
+            <p>
+                Vi håper selvfølgelig å se deg, men uansett hva du svarer
+                er det fint om du gir oss beskjed.
+            </p>
+
+
+            <form
+                action="https://formspree.io/f/YOUR-FORMSPREE-ID"
+                method="POST"
+                class="rsvp-form"
+            >
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Navn
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="navn"
+                        placeholder="Skriv navnet ditt"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Hva passer best for deg?
+                    </label>
+
+                    <div class="radio-group">
+
+                        <label class="radio-option">
+                            <input
+                                type="radio"
+                                name="svar"
+                                value="Kommer fredag og lørdag"
+                                required
+                            >
+                            <span>
+                                Kommer fredag og lørdag
+                            </span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input
+                                type="radio"
+                                name="svar"
+                                value="Kommer lørdag"
+                            >
+                            <span>
+                                Kommer lørdag
+                            </span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input
+                                type="radio"
+                                name="svar"
+                                value="Kommer ikke"
+                            >
+                            <span>
+                                Kommer ikke
+                            </span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="allergies">
+                        Allergier eller andre hensyn til maten
+                    </label>
+
+                    <textarea
+                        id="allergies"
+                        name="allergier"
+                        rows="5"
+                        placeholder="Skriv gjerne om allergier, intoleranser eller andre mathensyn."
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="button button-primary"
+                >
+                    Send svar
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- WEATHER -->
+
+    <section class="section weather" id="vaer">
+
+        <div class="content narrow">
+
+            <p class="section-label">VÆR</p>
+
+            <h2>Hvordan blir været?</h2>
+
+            <p>
+                Det finner vi ut etter hvert. Meteorologene har dessverre
+                ikke klart å levere på bestillingen vår ennå.
+            </p>
+
+            <div class="weather-placeholder">
+
+                <div class="weather-icon">☀️</div>
+
+                <div>
+                    <strong>Værmelding</strong>
+                    <p>
+                        Værmelding blir tilgjengelig nærmere bryllupet.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PHOTO -->
+
+    <section class="section photo-section" id="foto">
+
+        <div class="content narrow">
+
+            <p class="section-label">FOTO</p>
+
+            <h2>Del bildene deres</h2>
+
+            <p>
+                Har du tatt noen fine, rare eller pinlige bilder?
+                Vi samler dem gjerne på ett sted.
+            </p>
+
+            <a
+                href="https://drive.google.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button button-primary"
+            >
+                Åpne fotoalbum
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-names">
+            Marthe & Snorre
+        </div>
+
+        <p>
+            10. juli 2027
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
