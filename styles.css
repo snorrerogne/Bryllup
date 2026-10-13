@@ -17,6 +17,6 @@
 /* Mobiltilpasning av hero-bildet */
 @media (max-width: 600px) {
   .hero-image {
-    object-position: 20% center;
+    object-position: 30% center;
   }
 }
