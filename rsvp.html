@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="no">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#243b30"><title>RSVP | Marthe & Snorre</title><link rel="icon" href="assets/ms-logo.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><img src="assets/ms-logo.svg" alt="" class="brand-logo"><span>Marthe <i>&</i> Snorre</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Meny <span aria-hidden="true">☰</span></button><nav class="site-nav" id="site-nav" aria-label="Hovedmeny"><a href="index.html">Hjem</a><a class="nav-rsvp active" href="rsvp.html">RSVP</a><a href="program.html">Program</a><a href="overnatting.html">Overnatting</a><a href="vaer.html">Værmelding</a><a href="foto.html">Foto</a></nav></header>
+<main>
+<section class="page-hero"><div class="page-hero-pattern"></div><p class="eyebrow">Vi håper du kommer</p><h1>RSVP</h1><p>Gi oss beskjed om du blir med på feiringen.</p></section>
+<section class="form-section section-wrap narrow-wrap"><div class="form-intro"><p class="eyebrow">Svar på invitasjonen</p><h2>Blir du med til fjells?</h2><p>Fyll ut skjemaet under, også dersom du dessverre ikke har anledning til å komme.</p><p class="deadline"><strong>Svarfrist:</strong> [sett inn svarfrist]</p><p class="small-note">Bytt ut svarfristen over med den faktiske datoen før publisering.</p></div>
+<form action="https://formspree.io/f/mwlpegwo" method="POST" class="rsvp-form">
+<label for="names">Navn på alle som svarer <span>*</span><small>Du kan skrive flere navn i samme felt.</small></label><input id="names" name="navn" type="text" autocomplete="name" placeholder="F.eks. Ola Nordmann og Kari Nordmann" required>
+<label for="phone">Telefon</label><input id="phone" name="telefon" type="tel" autocomplete="tel" placeholder="+47 …">
+<label for="email">E-post <span>*</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="navn@eksempel.no" required>
+<fieldset><legend>Kommer du/dere? <span>*</span></legend>
+<label class="radio-option"><input type="radio" name="deltakelse" value="Ja, kommer både fredag og lørdag" required><span>Ja, kommer både fredag og lørdag</span></label>
+<label class="radio-option"><input type="radio" name="deltakelse" value="Ja, kommer lørdag"><span>Ja, kommer lørdag</span></label>
+<label class="radio-option"><input type="radio" name="deltakelse" value="Nei, kommer ikke"><span>Nei, kommer ikke</span></label></fieldset>
+<label for="diet">Allergier/dietter som skal tas hensyn til?</label><textarea id="diet" name="allergier_og_dietter" rows="3" placeholder="Skriv gjerne hvem det gjelder."></textarea>
+<label for="other">Annet / spørsmål?</label><textarea id="other" name="annet_eller_sporsmal" rows="4" placeholder="Taler, praktiske hensyn eller annet vi bør vite om."></textarea>
+<input type="hidden" name="_subject" value="Bryllup RSVP – Marthe & Snorre"><button class="button form-submit" type="submit">Send svar <span aria-hidden="true">↗</span></button>
+<p class="form-privacy">Opplysningene brukes kun til å planlegge bryllupshelgen.</p>
+</form></section></main>
+<footer class="site-footer"><a href="index.html" class="footer-brand">M & S</a><p>Marthe & Snorre · 9.–11. juli 2027</p><a href="index.html">Til forsiden ↗</a></footer></body></html>
