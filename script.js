@@ -12,7 +12,7 @@
   if (!countdown) return;
 
   // Local time in Norway: the ceremony day begins at midnight on 10 July 2027.
-  const weddingStart = new Date('2026-10-13T00:00:00+02:00');
+  const weddingStart = new Date('2027-07-10T00:00:00+02:00');
   const sundayStart = new Date('2027-07-11T00:00:00+02:00');
   const mondayStart = new Date('2027-07-12T00:00:00+02:00');
   const dayEl = document.getElementById('countdown-days');
