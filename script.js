@@ -12,7 +12,7 @@
   if (!countdown) return;
 
   // Local time in Norway: the ceremony day begins at midnight on 10 July 2027.
-  const weddingStart = new Date('2027-07-10T00:00:00+02:00');
+  const weddingStart = new Date('2026-10-13T00:00:00+02:00');
   const sundayStart = new Date('2027-07-11T00:00:00+02:00');
   const mondayStart = new Date('2027-07-12T00:00:00+02:00');
   const dayEl = document.getElementById('countdown-days');
@@ -24,8 +24,8 @@
   const caption = document.getElementById('celebration-caption');
 
   // Replace these URLs with your preferred GIFs whenever you like.
-  const partyGif = 'https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif';
-  const hangoverGif = 'https://media.giphy.com/media/3o6Zt4HU9uwr5pB0w8/giphy.gif';
+  const partyGif = 'assets/party.gif';
+  const hangoverGif = 'assets/hungover.gif';
 
   function updateCountdown() {
     const now = new Date();
